@@ -3,13 +3,16 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden; /* Prevent scrollbars */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Position at top */
+  min-height: 100vh;
 }
 
 /* Remove all browser styling from the video */
 video {
   all: unset; /* ← This is the key to remove all borders, outlines, etc. */
   display: block;
-  margin: auto;
 }
 
 /* Style the video */
