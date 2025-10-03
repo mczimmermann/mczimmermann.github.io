@@ -14,6 +14,12 @@ video {
   border: none;
   outline: none;
   display: block;
+  box-shadow: none;
+  filter: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-filter: none;
+  -moz-filter: none;
 }
 
 /* Style the video */
@@ -23,7 +29,25 @@ video {
   height: auto;
   max-height: 100vh;
   object-fit: contain;
-  box-shadow: none;
-  filter: none;
+  box-shadow: none !important;
+  filter: none !important;
   border: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-filter: none !important;
+  -moz-filter: none !important;
+  text-shadow: none !important;
+}
+
+/* Style the animated cursor */
+#custom-cursor {
+  position: fixed;
+  width: 32px; /* match your image size */
+  height: 32px;
+  pointer-events: none; /* allow clicks to pass through */
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%); /* centers image on pointer */
 }
