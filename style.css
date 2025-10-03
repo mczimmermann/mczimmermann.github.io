@@ -1,0 +1,11 @@
+
+/* Make the video fill the screen */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Push video behind any future content */
+}
