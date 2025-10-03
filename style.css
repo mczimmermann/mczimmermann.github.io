@@ -20,6 +20,7 @@ body {
 
   border: none;
   outline: none;
+  clip-path: inset(0px);
   box-shadow: none;
   appearance: none;
 }
