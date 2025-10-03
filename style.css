@@ -9,15 +9,11 @@ body {
 video {
   all: unset; /* ← This is the key to remove all borders, outlines, etc. */
   display: block;
+  margin: auto;
 }
 
 /* Style the video */
 #bg-video {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-
   width: auto;
   max-width: 100%;
   height: auto;
