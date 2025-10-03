@@ -29,15 +29,3 @@ video {
   max-height: 100vh;
   object-fit: contain;
 }
-
-/* Style the animated cursor */
-#custom-cursor {
-  position: fixed;
-  width: 32px; /* match your image size */
-  height: 32px;
-  pointer-events: none; /* allow clicks to pass through */
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%); /* centers image on pointer */
-}
