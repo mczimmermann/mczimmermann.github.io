@@ -5,23 +5,22 @@ body {
   overflow: hidden; /* Prevent scrollbars */
 }
 
-/* Style the video to scale correctly */
+/* Remove all browser styling from the video */
+video {
+  all: unset; /* ← This is the key to remove all borders, outlines, etc. */
+  display: block;
+}
+
+/* Style the video */
 #bg-video {
   display: block;
-  margin: 0 auto; /* horizontally center */
-  position: relative;
-  top: 0;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+
+  width: auto;
+  max-width: 100%;
   height: auto;
-  max-width: 100vw;
   max-height: 100vh;
   object-fit: contain;
-  object-position: top center;
-
-  border: none;
-  outline: none;
-  clip-path: inset(0px);
-  box-shadow: none;
-  appearance: none;
-  background-color: transparent !important;
 }
