@@ -1,6 +1,6 @@
 /* Basic page setup */
 body {
-  cursor: none; /* Remove default curso
+  cursor: url('/multimedia/party_cursor.cur'), auto;
   margin: 0;
   padding: 0;
   overflow: hidden; /* Prevent scrollbars */
