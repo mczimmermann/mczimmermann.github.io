@@ -12,6 +12,6 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  object-fit: cover;
+  object-fit: contain;
   z-index: -1; /* Push video behind any future content */
 }
