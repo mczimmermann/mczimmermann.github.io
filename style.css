@@ -7,20 +7,21 @@ body {
 
 /* Style the video to scale correctly */
 #bg-video {
-  position: absolute;
+  display: block;
+  margin: 0 auto; /* horizontally center */
+  position: relative;
   top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 100vw;
-  height: 100vh;
-
-  object-fit: contain;  /* KEY: fits entire video without cropping */
-  object-position: center center;
+  width: 100%;
+  height: auto;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: contain;
+  object-position: top center;
 
   border: none;
   outline: none;
   clip-path: inset(0px);
   box-shadow: none;
   appearance: none;
+  background-color: transparent !important;
 }
