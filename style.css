@@ -12,7 +12,6 @@ body {
 
 /* Remove all browser styling from the video */
 video {
-  all: unset;
   display: block;
   border: none !important;
   outline: none !important;
@@ -23,6 +22,10 @@ video {
   -webkit-filter: none !important;
   -moz-filter: none !important;
   text-shadow: none !important;
+  /* Force remove any browser styling */
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
 }
 
 /* Video container to isolate the video */
@@ -52,9 +55,19 @@ video {
   -moz-filter: none !important;
   text-shadow: none !important;
   /* Force remove any browser styling */
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  /* Additional border removal */
+  border-width: 0 !important;
+  border-style: none !important;
+  border-color: transparent !important;
+}
+
+/* Remove focus styling from video */
+#bg-video:focus {
+  outline: none !important;
+  border: none !important;
 }
 
 /* Style the animated cursor */
