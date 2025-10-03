@@ -23,6 +23,6 @@ video {
   height: auto;
   max-height: 100vh;
   object-fit: contain;
-  /* Add some debugging - remove this later */
-  border: 2px solid red;
+  box-shadow: none;
+  filter: none;
 }
