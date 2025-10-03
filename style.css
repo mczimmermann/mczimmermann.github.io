@@ -25,4 +25,5 @@ video {
   object-fit: contain;
   box-shadow: none;
   filter: none;
+  border: none !important;
 }
