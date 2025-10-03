@@ -11,7 +11,8 @@ body {
 
 /* Remove all browser styling from the video */
 video {
-  all: unset; /* ← This is the key to remove all borders, outlines, etc. */
+  border: none;
+  outline: none;
   display: block;
 }
 
@@ -22,4 +23,6 @@ video {
   height: auto;
   max-height: 100vh;
   object-fit: contain;
+  /* Add some debugging - remove this later */
+  border: 2px solid red;
 }
