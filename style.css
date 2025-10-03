@@ -1,5 +1,6 @@
 /* Remove default margin */
 body {
+  cursor: none; /* Remove default curso
   margin: 0;
   padding: 0;
   overflow: hidden; /* Prevent scrollbars */
@@ -11,15 +12,27 @@ body {
 
 /* Remove all browser styling from the video */
 video {
-  border: none;
-  outline: none;
+  all: unset;
   display: block;
-  box-shadow: none;
-  filter: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-filter: none;
-  -moz-filter: none;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-filter: none !important;
+  -moz-filter: none !important;
+  text-shadow: none !important;
+}
+
+/* Video container to isolate the video */
+#video-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Style the video */
@@ -38,6 +51,10 @@ video {
   -webkit-filter: none !important;
   -moz-filter: none !important;
   text-shadow: none !important;
+  /* Force remove any browser styling */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 /* Style the animated cursor */
