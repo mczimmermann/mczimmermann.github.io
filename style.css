@@ -3,11 +3,7 @@ body {
   cursor: url('/multimedia/party_cursor.cur'), auto;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevent scrollbars */
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Position at top */
-  min-height: 100vh;
+  min-height: 200vh; /* Allow scrolling below the viewport */
 }
 
 /* Remove all browser styling from the video */
@@ -32,4 +28,15 @@ video {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+/* Style the image */
+img {
+  position: absolute;
+  top: 100vh; /* Position below the viewport */
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  height: auto;
+  margin: 20px 0;
 }
