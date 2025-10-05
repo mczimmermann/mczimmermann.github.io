@@ -30,14 +30,51 @@ video {
   z-index: 1;
 }
 
-/* Style the image */
-img {
-  position: relative;
-  display: block;
-  margin: 20px auto;
-  max-width: 90%;
+/* Style the images */
+.second-section img {
+  position: absolute;
+  max-width: 200px;
   height: auto;
   z-index: 2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual image positioning */
+.second-section img:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  transform: rotate(-5deg);
+}
+
+.second-section img:nth-child(2) {
+  top: 15%;
+  right: 15%;
+  transform: rotate(3deg);
+}
+
+.second-section img:nth-child(3) {
+  top: 50%;
+  left: 5%;
+  transform: rotate(-2deg);
+}
+
+.second-section img:nth-child(4) {
+  top: 45%;
+  right: 10%;
+  transform: rotate(4deg);
+}
+
+.second-section img:nth-child(5) {
+  top: 75%;
+  left: 20%;
+  transform: rotate(-3deg);
+}
+
+.second-section img:nth-child(6) {
+  top: 70%;
+  right: 5%;
+  transform: rotate(2deg);
 }
 
 /* Second section with blank background */
