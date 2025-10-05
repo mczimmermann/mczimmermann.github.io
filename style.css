@@ -83,7 +83,7 @@ video {
 }
 
 .scattered-img:hover {
-  transform: scale(1.05) rotate(var(--rotation)) !important;
+  transform: rotate(var(--rotation)) scale(calc(var(--scale) * 1.05)) !important;
   z-index: 10;
 }
 
@@ -93,13 +93,15 @@ video {
   left: 12%;
   transform: rotate(-23deg) scale(0.8);
   --rotation: -23deg;
+  --scale: 0.8;
 }
 
 .img-2 {
   top: 32%;
   right: 8%;
-  transform: rotate(7deg) scale(0.4);
+  transform: rotate(7deg) scale(0.6);
   --rotation: 7deg;
+  --scale: 0.6;
 }
 
 .img-3 {
@@ -107,6 +109,7 @@ video {
   left: 3%;
   transform: rotate(-17deg) scale(1.2);
   --rotation: -17deg;
+  --scale: 1.2;
 }
 
 .img-4 {
@@ -114,13 +117,15 @@ video {
   right: 25%;
   transform: rotate(28deg) scale(1.0);
   --rotation: 28deg;
+  --scale: 1.0;
 }
 
 .img-5 {
   top: 73%;
   left: 18%;
-  transform: rotate(-35deg) scale(0.5);
+  transform: rotate(-35deg) scale(0.7);
   --rotation: -35deg;
+  --scale: 0.7;
 }
 
 .img-6 {
@@ -128,6 +133,7 @@ video {
   right: 15%;
   transform: rotate(19deg) scale(2.0);
   --rotation: 19deg;
+  --scale: 2.0;
 }
 
 .img-7 {
@@ -135,6 +141,7 @@ video {
   left: 35%;
   transform: rotate(-8deg) scale(0.8);
   --rotation: -8deg;
+  --scale: 0.8;
 }
 
 .img-8 {
@@ -142,6 +149,7 @@ video {
   right: 3%;
   transform: rotate(33deg);
   --rotation: 33deg;
+  --scale: 1.0;
 }
 
 .img-9 {
@@ -149,6 +157,7 @@ video {
   left: 8%;
   transform: rotate(-26deg);
   --rotation: -26deg;
+  --scale: 1.0;
 }
 
 .img-10 {
@@ -156,4 +165,5 @@ video {
   left: 7%;
   transform: rotate(15deg);
   --rotation: 15deg;
+  --scale: 1.0;
 }
