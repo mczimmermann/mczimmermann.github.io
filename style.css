@@ -6,6 +6,11 @@ body {
   min-height: 200vh; /* Allow scrolling below the viewport */
 }
 
+/* Custom cursor support everywhere */
+* {
+  cursor: url('/multimedia/party_cursor.cur'), auto;
+}
+
 /* Remove all browser styling from the video */
 video {
   display: block;
