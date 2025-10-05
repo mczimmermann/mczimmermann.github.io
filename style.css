@@ -105,7 +105,7 @@ video {
 }
 
 .img-3 {
-  top: 67%;
+  top: 40%;
   left: 3%;
   transform: rotate(-17deg) scale(1.2);
   --rotation: -12deg;
@@ -129,7 +129,7 @@ video {
 }
 
 .img-6 {
-  top: 45%;
+  top: 50%;
   right: 15%;
   transform: rotate(19deg) scale(2.0);
   --rotation: 14deg;
@@ -146,7 +146,7 @@ video {
 
 .img-8 {
   top: 58%;
-  right: 3%;
+  right: 50%;
   transform: rotate(33deg);
   --rotation: 28deg;
   --scale: 1.0;
@@ -154,14 +154,14 @@ video {
 
 .img-9 {
   top: 82%;
-  left: 50%;
+  left: 30%;
   transform: rotate(-26deg);
   --rotation: -21deg;
   --scale: 1.0;
 }
 
 .img-10 {
-  top: 38%;
+  top: 73%;
   left: 7%;
   transform: rotate(15deg);
   --rotation: 10deg;
