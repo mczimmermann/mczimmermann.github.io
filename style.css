@@ -39,6 +39,7 @@ video {
   height: 100vh;
   background-color: white;
   z-index: 0;
+  padding: 40px;
 }
 
 /* Text content in center */
@@ -53,7 +54,6 @@ video {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
 .text-content h2 {
@@ -74,8 +74,12 @@ video {
   position: absolute;
   max-width: 250px;
   height: auto;
-  border-radius: 15px;
   z-index: 1;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
 }
 
 .scattered-img:hover {
