@@ -36,17 +36,9 @@ video {
   top: 100vh;
   left: 0;
   width: 100%;
-  height: 200vh;
+  height: 100vh;
   background-color: white;
   z-index: 0;
-}
-
-/* Scatter section */
-.scatter-section {
-  height: 100vh;
-  position: relative;
-  padding: 40px;
-  background-color: #f8f9fa;
 }
 
 /* Text content in center */
@@ -80,75 +72,84 @@ video {
 /* Scattered images */
 .scattered-img {
   position: absolute;
-  max-width: 150px;
+  max-width: 250px;
   height: auto;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 1;
 }
 
 .scattered-img:hover {
-  transform: scale(1.05) !important;
+  transform: scale(1.05) rotate(var(--rotation)) !important;
   z-index: 10;
 }
 
 /* Circular arrangement around text */
 .img-1 {
-  top: 15%;
-  left: 20%;
-  transform: rotate(-8deg);
+  top: 8%;
+  left: 12%;
+  transform: rotate(-23deg);
+  --rotation: -23deg;
 }
 
 .img-2 {
-  top: 15%;
-  right: 20%;
-  transform: rotate(12deg);
+  top: 32%;
+  right: 8%;
+  transform: rotate(7deg);
+  --rotation: 7deg;
 }
 
 .img-3 {
-  top: 25%;
-  left: 5%;
-  transform: rotate(-5deg);
+  top: 67%;
+  left: 3%;
+  transform: rotate(-17deg);
+  --rotation: -17deg;
 }
 
 .img-4 {
-  top: 25%;
-  right: 5%;
-  transform: rotate(7deg);
+  top: 18%;
+  right: 25%;
+  transform: rotate(28deg);
+  --rotation: 28deg;
 }
 
 .img-5 {
-  top: 50%;
-  left: 10%;
-  transform: rotate(-12deg);
+  top: 73%;
+  left: 18%;
+  transform: rotate(-35deg);
+  --rotation: -35deg;
 }
 
 .img-6 {
-  top: 50%;
-  right: 10%;
-  transform: rotate(9deg);
+  top: 45%;
+  right: 15%;
+  transform: rotate(19deg);
+  --rotation: 19deg;
 }
 
 .img-7 {
-  top: 75%;
-  left: 5%;
-  transform: rotate(-15deg);
+  top: 12%;
+  left: 35%;
+  transform: rotate(-8deg);
+  --rotation: -8deg;
 }
 
 .img-8 {
-  top: 75%;
-  right: 5%;
-  transform: rotate(18deg);
+  top: 58%;
+  right: 3%;
+  transform: rotate(33deg);
+  --rotation: 33deg;
 }
 
 .img-9 {
-  top: 85%;
-  left: 20%;
-  transform: rotate(-6deg);
+  top: 82%;
+  left: 8%;
+  transform: rotate(-26deg);
+  --rotation: -26deg;
 }
 
 .img-10 {
-  top: 85%;
-  right: 20%;
-  transform: rotate(14deg);
+  top: 38%;
+  left: 7%;
+  transform: rotate(15deg);
+  --rotation: 15deg;
 }
