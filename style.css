@@ -89,8 +89,8 @@ video {
 
 /* Circular arrangement around text */
 .img-1 {
-  top: 8%;
-  left: 12%;
+  top: 11%;
+  left: 15%;
   transform: rotate(-23deg) scale(0.8);
   --rotation: -18deg;
   --scale: 0.8;
@@ -165,5 +165,13 @@ video {
   left: 7%;
   transform: rotate(15deg) scale(1.2);
   --rotation: 10deg;
+  --scale: 1.2;
+}
+
+.img-11 {
+  top: 5%;
+  left: 12%;
+  transform: rotate(-180deg) scale(1.2);
+  --rotation: -175deg;
   --scale: 1.2;
 }
