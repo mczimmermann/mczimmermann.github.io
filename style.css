@@ -84,6 +84,7 @@ video {
 }
 
 .scattered-img:hover {
+  cursor: url('/multimedia/party_cursor.cur'), auto;
   transform: rotate(var(--rotation)) scale(calc(var(--scale) * 1.05)) !important;
   z-index: 10;
 }
@@ -156,9 +157,9 @@ video {
 .img-9 {
   top: 72%;
   left: 35%;
-  transform: rotate(-26deg) scale(0.7);
+  transform: rotate(-26deg) scale(0.8);
   --rotation: -21deg;
-  --scale: 0.7;
+  --scale: 0.8;
 }
 
 .img-10 {
