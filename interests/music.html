@@ -23,18 +23,33 @@
                 const iframeElement = document.getElementById('sc-player');
                 const widget = SC.Widget(iframeElement);
             
-                // Image click event
-                const image = document.getElementById('click-to-play');
+                // Handle image toggle based on playback state
+                function updateImage(isPlaying) {
+                    if (isPlaying) {
+                        image.src = '../multimedia/vinyl.gif';
+                    } else {
+                        image.src = '../multimedia/vinyl_stopped.png';
+                    }
+                }
+
+                // Image click toggles play/pause
                 image.addEventListener('click', function () {
                     widget.isPaused(function (paused) {
                         if (paused) {
                             widget.play();
-                            image.src = '../multimedia/vinyl.gif';  // Set to play image
                         } else {
                             widget.pause();
-                            image.src = '../multimedia/vinyl_stopped.png';   // Set back to pause image
                         }
                     });
+                });
+
+                // Sync image when play or pause events fire
+                widget.bind(SC.Widget.Events.PLAY, () => updateImage(true));
+                widget.bind(SC.Widget.Events.PAUSE, () => updateImage(false));
+
+                // Set initial state once player is ready
+                widget.bind(SC.Widget.Events.READY, () => {
+                    widget.isPaused(paused => updateImage(!paused));
                 });
             </script>
             
