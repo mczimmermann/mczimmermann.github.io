@@ -32,4 +32,5 @@ html, body, * {
 .img-gif {
   max-width: 100%; /* Ensures the video is responsive */
   height: auto;
+  transform: scale(5);
 }
