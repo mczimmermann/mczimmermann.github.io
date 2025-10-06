@@ -108,11 +108,11 @@ video {
 }
 
 .img-2 {
-  top: 8%;
+  top: 4%;
   right: 8%;
-  transform: rotate(7deg) scale(0.8);
+  transform: rotate(7deg) scale(0.7);
   --rotation: 2deg;
-  --scale: 0.8;
+  --scale: 0.7;
 }
 
 .img-3 {
