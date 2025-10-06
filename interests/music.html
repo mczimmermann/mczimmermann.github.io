@@ -10,30 +10,28 @@
     <div class="background"></div>
     <div class="row">
         <div class="column">
-            <img src="../multimedia/vinyl.gif" alt="Vinyl Rotating" class="img-gif">
+            <img id="clickable-gif" src="../multimedia/vinyl.gif" alt="Vinyl Rotating" class="img-gif">
+            <audio id="record-sound" src="../multimedia/song.mp3" preload="auto"></audio>
+            <script>
+                // Get references to the image and audio elements
+                const image = document.getElementById('clickable-gif');
+                const audio = document.getElementById('record-sound');
+            
+                // Play sound on image click
+                image.addEventListener('click', () => {
+                    if (audio.paused) {
+                        audio.currentTime = 0; // start from beginning
+                        audio.play();
+                    } else {
+                        audio.pause();
+                        audio.currentTime = 0; // rewind to beginning
+                    }
+                });
+              </script>
         </div>
         <div class="column">
             </div class="text-content">
                 <h2>Music!</h2>
-                <p>here are some words</p>
-                <!-- <h2>FAQ:</h2>
-                <table>
-                    <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
-                    </tr>
-                    <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                    </tr>
-                    <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
-                    </tr>
-                </table> -->
             </div>
         </div>
     </div>
