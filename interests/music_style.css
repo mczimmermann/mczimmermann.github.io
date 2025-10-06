@@ -38,7 +38,7 @@ html, body, * {
 
 /* Text content in center */
 .text-content {
-  transform: translate(20%, 0%);
+  transform: translate(20%, 10%);
   max-width: 500px;
   text-align: center;
   z-index: 2;

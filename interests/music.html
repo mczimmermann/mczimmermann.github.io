@@ -24,7 +24,8 @@
                 const widget = SC.Widget(iframeElement);
             
                 // Image click event
-                document.getElementById('click-to-play').addEventListener('click', function () {
+                const image = document.getElementById('click-to-play');
+                image.addEventListener('click', function () {
                     widget.isPaused(function (paused) {
                         if (paused) {
                             widget.play();
