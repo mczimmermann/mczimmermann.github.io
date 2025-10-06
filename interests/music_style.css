@@ -47,15 +47,22 @@ html, body, * {
   border-radius: 20px;
 }
 
-.text-content h2 {
+.text-content h3 {
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
   color: #ffffff;
 }
 
 .text-content p {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.text-content table {
+  font-size: 1.0rem;
   line-height: 1.6;
   color: #ffffff;
   margin-bottom: 15px;
