@@ -33,12 +33,12 @@ html, body, * {
 .img-gif {
   max-width: 100%; /* Ensures the video is responsive */
   height: auto;
-  transform: scale(2.5) translate(20%, 45%) rotate(-90deg);
+  transform: scale(2.5) translate(40%, 45%) rotate(-90deg);
 }
 
 /* Text content in center */
 .text-content {
-  transform: translate(20%, 50%);
+  transform: translate(20%, 10%);
   max-width: 500px;
   text-align: center;
   z-index: 2;
