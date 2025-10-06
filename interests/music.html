@@ -5,16 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="music_style.css">
     <title>Music</title>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
 </head>
 <body>
     <div class="background"></div>
     <div class="row">
         <div class="column">
-            <img id="clickable-gif" src="../multimedia/vinyl.gif" alt="Vinyl Rotating" class="img-gif">
+            <img id="click-to-play" src="../multimedia/vinyl.gif" alt="Click to play" style="cursor: pointer; width: 200px;" class="img-gif">
+            <!-- <img id="click-to-play" src="../multimedia/vinyl.gif" alt="Vinyl Rotating" class="img-gif"> -->
+            <!-- Hidden SoundCloud Player -->
+            <iframe id="sc-player" width="100%"  height="166" scrolling="no" frameborder="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/forss/flickermood">
+            </iframe>
+
+            <script>
+                // Get the iframe and create a widget object
+                const iframeElement = document.getElementById('sc-player');
+                const widget = SC.Widget(iframeElement);
+            
+                // Image click event
+                document.getElementById('play-button').addEventListener('click', function() {
+                  widget.play();
+                });
+            </script>
+            
+            <!-- 
             <audio id="record-sound" src="../multimedia/song.mp3" preload="auto"></audio>
             <script>
                 // Get references to the image and audio elements
-                const image = document.getElementById('clickable-gif');
+                const image = document.getElementById('click-to-play');
                 const audio = document.getElementById('record-sound');
             
                 // Play sound on image click
@@ -28,12 +47,13 @@
                     }
                 });
               </script>
+              -->
         </div>
         <div class="column">
             <div class="text-content">
                 <h2>Music!</h2>
                 <p>here are some words</p>
-                <!-- <h2>FAQ:</h2>
+                <h2>FAQ:</h2>
                 <table>
                     <tr>
                     <th>Company</th>
@@ -50,7 +70,7 @@
                     <td>Francisco Chang</td>
                     <td>Mexico</td>
                     </tr>
-                </table> -->
+                </table>
             </div>
         </div>
     </div>

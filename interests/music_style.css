@@ -33,7 +33,7 @@ html, body, * {
 .img-gif {
   max-width: 100%; /* Ensures the video is responsive */
   height: auto;
-  transform: scale(1.5) translate(50%, 45%) rotate(-90deg);
+  transform: scale(1.5) translate(20%, 45%) rotate(-90deg);
 }
 
 /* Text content in center */
@@ -42,10 +42,9 @@ html, body, * {
   max-width: 500px;
   text-align: center;
   z-index: 2;
-  background-color: rgba(27, 54, 8, 0.95);
+  background-color: rgba(38, 75, 12, 0.95);
   padding: 30px;
   border-radius: 20px;
-  border: 2px solid yellow; /* TEMP: see if box shows */
 }
 
 .text-content h2 {
