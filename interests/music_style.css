@@ -11,7 +11,7 @@ html, body {
 }
 
 /* Change cursor on hover for clickable elements */
-html a:hover, html button:hover, html .clickable:hover {
+html a, html button:hover, html .clickable:hover {
   border: 2px solid red; /* temporary debug style */
   cursor: url('../multimedia/party_hat2.cur'), pointer !important;
 }
