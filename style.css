@@ -7,10 +7,9 @@ body {
   min-height: 200vh; /* Allow scrolling below the viewport */
 }
 
-/* Custom cursor support everywhere */
-* {
-  cursor: crosshair;
-  /*cursor: url('multimedia/party_cursor.cur'), auto !important;*/
+/* Ensure cursor applies to all elements */
+video, img, div, span, p, h1, h2, h3, a, button, input, textarea {
+  cursor: crosshair !important;
 }
 
 /* Remove all browser styling from the video */
