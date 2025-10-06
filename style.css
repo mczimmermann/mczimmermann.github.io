@@ -13,9 +13,9 @@ html, body, * {
 }
 
 /* Override any browser defaults */
-a, button, input, textarea, select, video, img, div, span, p, h1, h2, h3, h4, h5, h6 {
+/* a, button, input, textarea, select, video, img, div, span, p, h1, h2, h3, h4, h5, h6 {
   cursor: crosshair !important;
-}
+}*/
 
 /* Remove all browser styling from the video */
 video {
@@ -125,6 +125,7 @@ video {
 }
 
 .img-2:hover {
+  transform: rotate(var(--rotation)) scale(calc(var(--scale) * 1.5)) translate(0px 50px) !important;
   background-image: url('multimedia/lighter2_with_fire.png');
 }
 
