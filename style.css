@@ -7,8 +7,13 @@ body {
   min-height: 200vh; /* Allow scrolling below the viewport */
 }
 
-/* Ensure cursor applies to all elements */
-video, img, div, span, p, h1, h2, h3, a, button, input, textarea {
+/* Force cursor everywhere - more aggressive approach */
+html, body, * {
+  cursor: crosshair !important;
+}
+
+/* Override any browser defaults */
+a, button, input, textarea, select, video, img, div, span, p, h1, h2, h3, h4, h5, h6 {
   cursor: crosshair !important;
 }
 
@@ -114,6 +119,9 @@ video {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  border: 2px solid red; /* Debug border */
+  min-width: 100px;
+  min-height: 100px;
 }
 
 .img-2:hover {
