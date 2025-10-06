@@ -110,21 +110,9 @@ video {
 .img-2 {
   top: 8%;
   right: 8%;
-  transform: rotate(7deg) scale(1.6);
+  transform: rotate(7deg) scale(0.8);
   --rotation: 2deg;
-  --scale: 1.6;
-  background-image: url('multimedia/lighter2.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid red; /* Debug border */
-  min-width: 100px;
-  min-height: 100px;
-}
-
-.img-2:hover {
-  transform: rotate(var(--rotation)) scale(calc(var(--scale) * 3.5)) translate(0px 50px) !important;
-  background-image: url('multimedia/lighter2_with_fire.png');
+  --scale: 0.8;
 }
 
 .img-3 {
@@ -184,7 +172,7 @@ video {
 }
 
 .img-10 {
-  top: 35%;
+  top: 25%;
   right: 7%;
   transform: rotate(-15deg) scale(0.9);
   --rotation: -10deg;
