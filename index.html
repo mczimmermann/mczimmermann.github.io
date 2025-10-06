@@ -13,6 +13,11 @@
         Your browser does not support the video tag.
     </video>
     
+    <audio id="lighter-sound" preload="auto">
+        <source src="multimedia/lighter.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
     <div class="second-section">
         <div class="text-content">
             <h2>Hi, I'm Che!</h2>
@@ -33,17 +38,20 @@
         <img src="multimedia/wallet.png" alt="Image 11" class="scattered-img img-11">
     </div>
 
-    <audio id="audio" src="multimedia/lighter.mp3"></audio>
+
     <script>
-        var audio = document.getElementById("audio");
+        var audio = document.getElementById("lighter-sound");
         var img = document.getElementById("lighter");
+        audio.muted = false; // Enable audio immediately
         
         function play() {
-          audio.play();
+          audio.currentTime = 0; // Reset to beginning
+          audio.play().catch(e => console.log('Audio play failed:', e));
         }
         
         function stop() {
           audio.pause();
+          audio.currentTime = 0;
         }
         
         img.addEventListener('click', play);
