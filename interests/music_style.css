@@ -6,13 +6,14 @@ body {
 }
   
 /* Force cursor everywhere - more aggressive approach */
-html, body, * {
+html, body {
   cursor: url('../multimedia/party_cursor.cur'), auto;
 }
 
 /* Change cursor on hover for clickable elements */
-a:hover, button:hover, .clickable:hover {
-  cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur826.cur'), pointer !important;
+html a:hover, html button:hover, html .clickable:hover {
+  border: 2px solid red; /* temporary debug style */
+  cursor: url('../multimedia/party_hat2.cur'), pointer !important;
 }
 
 .background {
