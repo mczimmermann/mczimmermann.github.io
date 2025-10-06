@@ -12,7 +12,7 @@ html, body, * {
 
 /* Change cursor on hover for clickable elements */
 a:hover, button:hover, .clickable:hover {
-  cursor: url('../multimedia/party_hat2.cur'), pointer !important;
+  cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur826.cur'), pointer !important;
 }
 
 .background {
