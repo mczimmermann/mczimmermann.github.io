@@ -10,12 +10,6 @@ html, body {
   cursor: url('../multimedia/party_cursor.cur'), auto;
 }
 
-/* Change cursor on hover for clickable elements */
-html a, html button:hover, html .clickable:hover {
-  border: 2px solid red; /* temporary debug style */
-  cursor: url('../multimedia/party_hat2.cur'), pointer !important;
-}
-
 .background {
   position: absolute;
   top: 0;
@@ -40,6 +34,12 @@ html a, html button:hover, html .clickable:hover {
   max-width: 100%; /* Ensures the video is responsive */
   height: auto;
   transform: scale(3.5) translate(44%, 65%) rotate(-90deg);
+}
+
+/* Change cursor on hover for img */
+.img-gif:hover {
+  border: 2px solid red; /* temporary debug style */
+  cursor: url('../multimedia/party_hat2.cur'), pointer !important;
 }
 
 /* Text content in center */
