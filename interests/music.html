@@ -12,10 +12,6 @@
     <div class="row">
         <div class="column">
             <img id="click-to-play" src="../multimedia/vinyl_stopped.png" alt="Click to play" style="cursor: pointer; width: 200px;" class="img-gif">
-            <div class="text-content">
-                <h3>About the Artist!</h3>
-                <p>here are some words</p>
-            </div>
             
             <!-- <img id="click-to-play" src="../multimedia/vinyl.gif" alt="Vinyl Rotating" class="img-gif"> -->
             <!-- Hidden SoundCloud Player -->
@@ -42,59 +38,11 @@
                     });
                 });
             </script>
-            <!--
-            <script>
-                // Get the iframe and create a widget object
-                const iframeElement = document.getElementById('sc-player');
-                const widget = SC.Widget(iframeElement);
-            
-                // Image click event
-                const image = document.getElementById('click-to-play');
 
-                // Handle image toggle based on playback state
-                function updateImage(isPlaying) {
-                    if (isPlaying) {
-                        image.src = '../multimedia/vinyl.gif';
-                    } else {
-                        image.src = '../multimedia/vinyl_stopped.png';
-                    }
-                }
-
-                // Always pause on load and set correct image
-                widget.bind(SC.Widget.Events.READY, () => {
-                    widget.pause();  // 👈 This forces it to stop on load
-                    updateImage(false);
-                });
-
-                // Image click toggles play/pause
-                image.addEventListener('click', function () {
-                    widget.isPaused(function (paused) {
-                        if (paused) {
-                            widget.play();
-                        } else {
-                            widget.pause();
-                        }
-                    });
-                });
-
-                // Sync image when play or pause events fire
-                widget.bind(SC.Widget.Events.PLAY, () => updateImage(true));
-                widget.bind(SC.Widget.Events.PAUSE, () => updateImage(false));
-
-                /*
-                image.addEventListener('click', function () {
-                    widget.isPaused(function (paused) {
-                        if (paused) {
-                            widget.play();
-                            image.src = '../multimedia/vinyl.gif';  // Set to play image
-                        } else {
-                            widget.pause();
-                            image.src = '../multimedia/vinyl_stopped.png';   // Set back to pause image
-                        }
-                    });
-                });*/
-            </script> 
-            -->
+            <div class="text-content" style="transform: translate(10%, 40%);">
+                <h3>About the Artist!</h3>
+                <p>here are some words</p>
+            </div>
         </div>
         <div class="column">
             <div class="text-content">    

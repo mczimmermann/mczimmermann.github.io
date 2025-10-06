@@ -10,6 +10,11 @@ html, body, * {
   cursor: url('../multimedia/party_cursor.cur'), auto;
 }
 
+/* Change cursor on hover for clickable elements */
+a:hover, button:hover, .clickable:hover {
+  cursor: url('../multimedia/party_hat2.cur'), pointer;
+}
+
 .background {
   position: absolute;
   top: 0;
@@ -66,4 +71,6 @@ html, body, * {
   line-height: 1.6;
   color: #ffffff;
   margin-bottom: 15px;
+  border-collapse: separate; /* Essential for border-spacing to work */
+  border-spacing: 10px; /* Applies 10px spacing between all cells */
 }
