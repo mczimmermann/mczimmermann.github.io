@@ -16,7 +16,7 @@ html, body {
   left: 0;
   width: 100%;
   height: 200vh;
-  background-color: #87ab69;
+  background-color: #629473;
   z-index: 0;
   padding: 40px;
 }
@@ -47,7 +47,7 @@ html, body {
   max-width: 600px;
   text-align: center;
   z-index: 2;
-  background-color: #658254;
+  background-color: #0a5133;
   padding: 30px;
   border-radius: 20px;
 }
