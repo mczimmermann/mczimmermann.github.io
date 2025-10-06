@@ -74,3 +74,23 @@ html, body {
   border-collapse: separate; /* Essential for border-spacing to work */
   border-spacing: 10px; /* Applies 10px spacing between all cells */
 }
+
+/* Scattered images */
+.scattered-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  z-index: 3;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.img-1 {
+  top: 18%;
+  left: 22%;
+  transform: rotate(-23deg) scale(0.8);
+}
