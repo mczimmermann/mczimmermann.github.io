@@ -1,6 +1,6 @@
 /* Basic page setup */
 body {
-  cursor: url('/multimedia/party_cursor.cur'), auto;
+  cursor: url('multimedia/party_cursor.cur'), auto;
   margin: 0;
   padding: 0;
   min-height: 200vh; /* Allow scrolling below the viewport */
@@ -8,7 +8,7 @@ body {
 
 /* Custom cursor support everywhere */
 * {
-  cursor: url('/multimedia/party_cursor.cur'), auto, !important;
+  cursor: url('multimedia/party_cursor.cur'), auto !important;
 }
 
 /* Remove all browser styling from the video */
@@ -89,7 +89,7 @@ video {
 }
 
 .scattered-img:hover {
-  cursor: url('/multimedia/party_cursor.cur'), auto;
+  cursor: url('multimedia/party_cursor.cur'), auto;
   transform: rotate(var(--rotation)) scale(calc(var(--scale) * 1.05)) !important;
   z-index: 10;
 }
@@ -109,6 +109,14 @@ video {
   transform: rotate(7deg) scale(0.6);
   --rotation: 2deg;
   --scale: 0.6;
+  background-image: url('multimedia/lighter2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-2:hover {
+  background-image: url('multimedia/lighter2_with_fire.png');
 }
 
 .img-3 {
