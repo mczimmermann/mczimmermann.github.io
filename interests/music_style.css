@@ -32,5 +32,33 @@ html, body, * {
 .img-gif {
   max-width: 100%; /* Ensures the video is responsive */
   height: auto;
-  transform: scale(5);
+  transform: scale(3);
+}
+
+/* Text content in center */
+.text-content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  text-align: center;
+  z-index: 2;
+  background-color: rgba(27, 54, 8, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.text-content h2 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 15px;
 }
