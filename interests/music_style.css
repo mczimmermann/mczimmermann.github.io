@@ -1,0 +1,35 @@
+/* Basic page setup */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; 
+}
+  
+/* Force cursor everywhere - more aggressive approach */
+html, body, * {
+  cursor: url('multimedia/party_cursor.cur'), auto;
+}
+
+.background {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: green;
+  z-index: 0;
+  padding: 40px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.img-gif {
+  max-width: 100%; /* Ensures the video is responsive */
+  height: auto;
+}

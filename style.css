@@ -10,11 +10,6 @@ html, body, * {
   cursor: url('multimedia/party_cursor.cur'), auto;
 }
 
-/* Override any browser defaults */
-/* a, button, input, textarea, select, video, img, div, span, p, h1, h2, h3, h4, h5, h6 {
-  cursor: crosshair !important;
-}*/
-
 /* Remove all browser styling from the video */
 video {
   display: block;
@@ -72,7 +67,21 @@ video {
   color: #333;
 }
 
+.text-content h3 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
 .text-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.text-content ul {
   font-size: 1.2rem;
   line-height: 1.6;
   color: #666;
