@@ -82,6 +82,7 @@ video {
 }
 
 .text-content ul {
+  list-style-type: none;
   font-size: 1.2rem;
   line-height: 1.6;
   color: #666;
