@@ -11,11 +11,11 @@
     <div class="background"></div>
     <div class="row">
         <div class="column">
-            <img id="click-to-play" src="../multimedia/vinyl.gif" alt="Click to play" style="cursor: pointer; width: 200px;" class="img-gif">
+            <img id="click-to-play" src="../multimedia/vinyl_stopped.png" alt="Click to play" style="cursor: pointer; width: 200px;" class="img-gif">
             <!-- <img id="click-to-play" src="../multimedia/vinyl.gif" alt="Vinyl Rotating" class="img-gif"> -->
             <!-- Hidden SoundCloud Player -->
             <iframe id="sc-player" width="100%"  height="166" scrolling="no" frameborder="no" allow="autoplay" 
-            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/forss/flickermood">
+            src="https://soundcloud.com/32895135ksv/boiler-room-charli-xcx-presents-partygirl-ibiza">
             </iframe>
 
             <script>
@@ -24,8 +24,16 @@
                 const widget = SC.Widget(iframeElement);
             
                 // Image click event
-                document.getElementById('click-to-play').addEventListener('click', function() {
-                  widget.play();
+                document.getElementById('click-to-play').addEventListener('click', function () {
+                    widget.isPaused(function (paused) {
+                        if (paused) {
+                            widget.play();
+                            image.src = '../multimedia/vinyl.gif';  // Set to play image
+                        } else {
+                            widget.pause();
+                            image.src = '../multimedia/vinyl_stopped.png';   // Set back to pause image
+                        }
+                    });
                 });
             </script>
             
